@@ -1,7 +1,11 @@
 {
   "name": "learning-github-actions",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alxevvv/learning-github-actions"
+  },
   "license": "MIT",
   "author": "alxevvv <alxevvv@gmail.com>",
   "main": "dist/index.js",
