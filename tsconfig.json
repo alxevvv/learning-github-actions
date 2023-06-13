@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationDir": "dist",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "rootDirs": ["src", "test"],
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES6"
+  },
+  "exclude": ["**/dist", "**/node_modules"],
+  "include": ["src/**/*"]
+}
