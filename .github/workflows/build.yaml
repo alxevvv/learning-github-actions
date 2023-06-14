@@ -1,7 +1,9 @@
 name: Build
 
-on: workflow_dispatch
-  
+on:
+  push: [dev]
+  pull_request: [dev]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,7 +23,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          registry-url: https://registry.npmjs.org/
           cache: pnpm
 
       - name: Install dependencies
