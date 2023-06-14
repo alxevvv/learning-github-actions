@@ -3,7 +3,6 @@ name: Release
 on:
   push: [main]
   pull_request: [main]
-  workflow_dispatch:
 
 jobs:
   build:
