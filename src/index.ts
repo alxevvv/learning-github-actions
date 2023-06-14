@@ -1,5 +1,9 @@
-function add(x: number, y: number) {
+function add(x: number, y = x) {
   return x + y;
 }
 
-export { add };
+function mult(x: number, y = x) {
+  return x * y;
+}
+
+export { add, mult };
