@@ -2,9 +2,6 @@ name: API test
 
 on: [workflow_dispatch]
 
-env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   use_api:
     runs-on: ubuntu-latest
@@ -15,7 +12,7 @@ jobs:
           curl -L \
           -X POST \
           -H "Accept: application/vnd.github+json" \
-          -H "Authorization: Bearer ${{ GH_TOKEN }}"\
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}"\
           -H "X-GitHub-Api-Version: 2022-11-28" \
           https://api.github.com/repos/alxevvv/learning-github-actions/issues \
           -d '{"title":"Found a bug","body":"I'\''m having a problem with this.","labels":["bug"]}'
