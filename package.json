@@ -42,9 +42,18 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "release": {
+    "extends": [
+      "@sanity/semantic-release-preset"
+    ],
+    "branches": [
+      "main"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
+    "@sanity/semantic-release-preset": "^4.1.1",
     "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",

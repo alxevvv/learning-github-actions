@@ -7,6 +7,9 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^17.6.5
     version: 17.6.5
+  '@sanity/semantic-release-preset':
+    specifier: ^4.1.1
+    version: 4.1.1(semantic-release@21.0.5)
   '@types/node':
     specifier: ^20.2.5
     version: 20.2.5
@@ -759,6 +762,35 @@ packages:
       config-chain: 1.1.13
     dev: true
 
+  /@sanity/semantic-release-preset@4.1.1(semantic-release@21.0.5):
+    resolution: {integrity: sha512-U2+iKcCQbNWlG2gbmLqXCa+DY4KvDg6aKrzij+WNi5hjlBa4JLckRa/1AZJwxN7J+iEzwp7p8UdLgr/4UKjADQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      semantic-release: 20 || 21
+    dependencies:
+      '@semantic-release/changelog': 6.0.3(semantic-release@21.0.5)
+      '@semantic-release/exec': 6.0.3(semantic-release@21.0.5)
+      '@semantic-release/git': 10.0.1(semantic-release@21.0.5)
+      conventional-changelog-conventionalcommits: 5.0.0
+      semantic-release: 21.0.5
+      semantic-release-license: 1.0.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@semantic-release/changelog@6.0.3(semantic-release@21.0.5):
+    resolution: {integrity: sha512-dZuR5qByyfe3Y03TpmCvAxCyTnp7r5XwtHRf/8vD9EAn4ZWbavUX8adMtXYzE86EVh0gyLA7lm5yW4IV30XUag==}
+    engines: {node: '>=14.17'}
+    peerDependencies:
+      semantic-release: '>=18.0.0'
+    dependencies:
+      '@semantic-release/error': 3.0.0
+      aggregate-error: 3.1.0
+      fs-extra: 11.1.1
+      lodash: 4.17.21
+      semantic-release: 21.0.5
+    dev: true
+
   /@semantic-release/commit-analyzer@10.0.1(semantic-release@21.0.5):
     resolution: {integrity: sha512-9ejHzTAijYs9z246sY/dKBatmOPcd0GQ7lH4MgLCkv1q4GCiDZRkjHJkaQZXZVaK7mJybS+sH3Ng6G8i3pYMGQ==}
     engines: {node: '>=18'}
@@ -777,9 +809,50 @@ packages:
       - supports-color
     dev: true
 
+  /@semantic-release/error@3.0.0:
+    resolution: {integrity: sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==}
+    engines: {node: '>=14.17'}
+    dev: true
+
   /@semantic-release/error@4.0.0:
     resolution: {integrity: sha512-mgdxrHTLOjOddRVYIYDo0fR3/v61GNN1YGkfbrjuIKg/uMgCd+Qzo3UAXJ+woLQQpos4pl5Esuw5A7AoNlzjUQ==}
     engines: {node: '>=18'}
+    dev: true
+
+  /@semantic-release/exec@6.0.3(semantic-release@21.0.5):
+    resolution: {integrity: sha512-bxAq8vLOw76aV89vxxICecEa8jfaWwYITw6X74zzlO0mc/Bgieqx9kBRz9z96pHectiTAtsCwsQcUyLYWnp3VQ==}
+    engines: {node: '>=14.17'}
+    peerDependencies:
+      semantic-release: '>=18.0.0'
+    dependencies:
+      '@semantic-release/error': 3.0.0
+      aggregate-error: 3.1.0
+      debug: 4.3.4
+      execa: 5.1.1
+      lodash: 4.17.21
+      parse-json: 5.2.0
+      semantic-release: 21.0.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@semantic-release/git@10.0.1(semantic-release@21.0.5):
+    resolution: {integrity: sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==}
+    engines: {node: '>=14.17'}
+    peerDependencies:
+      semantic-release: '>=18.0.0'
+    dependencies:
+      '@semantic-release/error': 3.0.0
+      aggregate-error: 3.1.0
+      debug: 4.3.4
+      dir-glob: 3.0.1
+      execa: 5.1.1
+      lodash: 4.17.21
+      micromatch: 4.0.5
+      p-reduce: 2.1.0
+      semantic-release: 21.0.5
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@semantic-release/github@9.0.3(semantic-release@21.0.5):
@@ -3684,6 +3757,11 @@ packages:
       aggregate-error: 4.0.1
     dev: true
 
+  /p-reduce@2.1.0:
+    resolution: {integrity: sha512-2USApvnsutq8uoxZBGbbWM0JIYLiEMJ9RlaN7fAzVNb9OZN0SHjjTTfIcb667XynS5Y1VhwDJVDa72TnPzAYWw==}
+    engines: {node: '>=8'}
+    dev: true
+
   /p-reduce@3.0.0:
     resolution: {integrity: sha512-xsrIUgI0Kn6iyDYm9StOpOeK29XM1aboGji26+QEortiFST1hGZaUQOLhtEbqHErPpGW/aSz6allwK2qcptp0Q==}
     engines: {node: '>=12'}
@@ -4138,6 +4216,10 @@ packages:
 
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    dev: true
+
+  /semantic-release-license@1.0.3:
+    resolution: {integrity: sha512-d+p1WSCFzIxLNPKXSkRpXWKQDBhRbp7g+w8LPzjVqFsUQ/eNw0KhMnKLoxsgVzZXAhEwpsZUx1VxBT5sjgOkIQ==}
     dev: true
 
   /semantic-release@21.0.5:
