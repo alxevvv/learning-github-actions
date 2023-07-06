@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { add, mult } from "../src";
+import { add, mult, pow } from "../src";
 
 describe("index.ts", () => {
   describe("function sum", () => {
@@ -20,6 +20,12 @@ describe("index.ts", () => {
 
     it("should place the first argument's value instead second if latter is omitted", () => {
       expect(mult(3)).toBe(9);
+    });
+  });
+
+  describe("function pow", () => {
+    it("should power given number", () => {
+      expect(pow(5)).toBe(25);
     });
   });
 });
