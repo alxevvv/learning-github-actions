@@ -26,6 +26,7 @@ describe("index.ts", () => {
   describe("function pow", () => {
     it("should power given number", () => {
       expect(pow(5)).toBe(25);
+      expect(pow(5, 4)).toBe(625);
     });
   });
 });
