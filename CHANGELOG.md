@@ -5,6 +5,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.0](https://github.com/alxevvv/learning-github-actions/compare/v1.4.0...v1.5.0) (2023-07-06)
+
+### Features
+
+- add `pow` function ([6b3463e](https://github.com/alxevvv/learning-github-actions/commit/6b3463e290dac9af9d602e76a0c6c137555782e2))
+- add power value parameter to `pow` function ([1b310e6](https://github.com/alxevvv/learning-github-actions/commit/1b310e6812e5f811498dc0122dab6336279d6cac))
+- use `@sanity/semantic-release-preset` ([986e55d](https://github.com/alxevvv/learning-github-actions/commit/986e55d67b5b0414e85552c5a7e4a0635fef9354))
+
+### Bug Fixes
+
+- **ci:** update release action ([5219e56](https://github.com/alxevvv/learning-github-actions/commit/5219e5669bfeac56c544d6e2c798739dfd3168f4))
+- remove `--dry-run` from release action ([e648a22](https://github.com/alxevvv/learning-github-actions/commit/e648a22ed5486b89fc705073fc5b046ddb2ef1b4))
+
 ## [1.4.0](https://github.com/alxevvv/learning-github-actions/compare/v1.3.0...v1.4.0) (2023-07-06)
 
 ### Features
