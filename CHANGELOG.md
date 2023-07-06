@@ -5,6 +5,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/alxevvv/learning-github-actions/compare/v2.0.0...v3.0.0) (2023-07-06)
+
+### ⚠ BREAKING CHANGES
+
+- - function `add` renamed to `sum`
+
+* function `mult` renamed to `tim`
+
+### Code Refactoring
+
+- rename functions ([11302bb](https://github.com/alxevvv/learning-github-actions/commit/11302bb135d278d23abfd982d6fb827bb6ed119e))
+
 ## [2.0.0](https://github.com/alxevvv/learning-github-actions/compare/v1.5.0...v2.0.0) (2023-07-06)
 
 ### ⚠ BREAKING CHANGES
