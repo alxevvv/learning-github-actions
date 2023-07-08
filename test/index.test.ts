@@ -31,6 +31,10 @@ describe("index.ts", () => {
     it("should divide by 2 if divider is omitted", () => {
       expect(div(10)).toBe(5);
     });
+
+    it("should throw a custom error if division by zero attempted", () => {
+      expect(() => div(10, 0)).toThrow("Division by zero isn't allowed");
+    });
   });
 
   describe("function pow", () => {
