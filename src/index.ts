@@ -8,7 +8,7 @@ function tim(x: number, y = x) {
 
 function div(x: number, y = 2) {
   if (y === 0) {
-    throw new Error("Division by zero isn't allowed");
+    throw new Error("Division by zero isn't allowed!");
   }
   return x / y;
 }
