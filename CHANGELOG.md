@@ -5,6 +5,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/alxevvv/learning-github-actions/compare/v3.0.0...v3.1.0) (2023-07-08)
+
+### Features
+
+- add `div` function ([eece41f](https://github.com/alxevvv/learning-github-actions/commit/eece41f4c872ae599213cbb40754dc4425381ac5))
+
 ## [3.0.0](https://github.com/alxevvv/learning-github-actions/compare/v2.0.0...v3.0.0) (2023-07-06)
 
 ### ⚠ BREAKING CHANGES
