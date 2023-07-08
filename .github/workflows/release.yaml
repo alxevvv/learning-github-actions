@@ -47,6 +47,7 @@ jobs:
       - name: Release
         run: |
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ./.npmrc
+          pnpm whoami --registry https://registry.npmjs.org
           pnpm semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
