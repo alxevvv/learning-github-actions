@@ -25,5 +25,8 @@
     "titleBar.inactiveBackground": "#3178c699",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

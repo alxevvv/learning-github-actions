@@ -1,3 +1,3 @@
 # learning-github-actions
 
-For personal usage
+For educational purposes
