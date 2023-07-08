@@ -5,6 +5,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.0](https://github.com/alxevvv/learning-github-actions/compare/v3.1.0...v3.2.0) (2023-07-08)
+
+### Features
+
+- throw an error if divided by zero ([e59726f](https://github.com/alxevvv/learning-github-actions/commit/e59726f08499897ee8ad2769807a55bfb9a00729))
+
 ## [3.1.0](https://github.com/alxevvv/learning-github-actions/compare/v3.0.0...v3.1.0) (2023-07-08)
 
 ### Features
