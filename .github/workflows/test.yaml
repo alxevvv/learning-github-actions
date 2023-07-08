@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup git
-        run: echo "${GITHUB_ACTOR}"
+        run: npm whoami --registry https://registry.npmjs.org
