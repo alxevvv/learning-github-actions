@@ -33,7 +33,7 @@ describe("index.ts", () => {
     });
 
     it("should throw a custom error if division by zero attempted", () => {
-      expect(() => div(10, 0)).toThrow("Division by zero isn't allowed");
+      expect(() => div(10, 0)).toThrow("Division by zero isn't allowed!");
     });
   });
 
