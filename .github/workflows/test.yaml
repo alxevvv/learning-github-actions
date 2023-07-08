@@ -6,9 +6,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Who Am I?
-        run: |
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-          npm whoami --registry https://registry.npmjs.org
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Print ENV
+        run: printenv
+#       - name: Who Am I?
+#         run: |
+#           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+#           npm whoami --registry https://registry.npmjs.org
+#         env:
+#           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
